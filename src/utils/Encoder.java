@@ -49,15 +49,5 @@ public class Encoder {
         byte[] decryptByte = cipher.doFinal(encryptedTextByte);
         return new String(decryptByte);
     }
-     
-    public static void main(String[] args) throws Exception {
-        Encoder seguridad = new Encoder();
-        String pass = "dbuitrago";
-        String passCifrado = seguridad.encrypt(pass);
-        System.out.println(pass);
-        System.out.println(passCifrado);
-        String passDescifrado = seguridad.decrypt(passCifrado);
-        System.out.println(passDescifrado);
-    }
 
 }
